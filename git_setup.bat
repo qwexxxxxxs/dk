@@ -17,11 +17,11 @@ echo.
 echo 第二步：配置Git用户信息
 echo 请替换下面的信息为你的实际信息
 echo.
-set /p username="请输入你的GitHub用户名: "
-set /p email="请输入你的GitHub邮箱: "
+set /p username="qwexxxxxxs"
+set /p email="dingkai032@gmail.com"
 
-git config --global user.name "%username%"
-git config --global user.email "%email%"
+git config --global user.name "qwexxxxxxs"
+git config --global user.email "dingkai032@gmail.com"
 
 echo.
 echo 第三步：初始化Git仓库
@@ -38,17 +38,3 @@ git commit -m "Initial commit: Add ViT model implementation"
 echo.
 echo 第六步：设置主分支
 git branch -M main
-
-echo.
-echo ========================================
-echo 接下来需要手动操作：
-echo ========================================
-echo 1. 在GitHub上创建新仓库
-echo 2. 复制仓库的HTTPS地址
-echo 3. 运行以下命令（替换为你的仓库地址）：
-echo    git remote add origin https://github.com/你的用户名/你的仓库名.git
-echo    git push -u origin main
-echo ========================================
-echo.
-
-pause
